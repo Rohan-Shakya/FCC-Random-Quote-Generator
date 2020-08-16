@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400, 500);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: 'Raleway', sans-serif;
+}
+#wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: #16a085;
+}
+#quote-box {
+  /* width: 50vw; */
+
+  padding: 2rem 4rem;
+  color: #16a085;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 6px;
+}
+#quote-box:after {
+  content: 'Designed By Rohan !';
+  position: absolute;
+  font-size: 0.8rem;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  letter-spacing: 2px;
+  z-index: 1000;
+}
+
+.btn {
+  background: #16a085;
+  color: white;
+  padding: 0.4rem 0.6rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#tweet-quote {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+#text {
+  font-size: 2rem;
+  padding: 2rem 1rem;
+  word-spacing: 4px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 2.4rem;
+}
+.quote-author {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+#new-quote {
+  margin-top: 2rem;
+  background: #16a085;
+  font-size: 1.2rem;
+  padding: 10px auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  #quote-box {
+    width: 80vw;
+    height: 75vh;
+    padding: 2rem 1rem;
+    font-size: 0.5rem;
+  }
+  #text {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2rem;
+  }
+  #new-quote {
+    margin-top: 1rem;
+  }
+}
